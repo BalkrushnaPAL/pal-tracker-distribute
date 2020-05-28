@@ -9,3 +9,8 @@ applications:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-registration-database
+  - tracker-service-registry
+
+
+#  curl -i -XPOST -H"Content-Type: application/json" registration-pal-bk.apps.evans.pal.pivotal.io/registration -d'{"name": "Pete"}'
+# curl -i -XPOST -H"Content-Type: application/json" registration-pal-bk.apps.evans.pal.pivotal.io/projects -d"{\"name\": \"Basket Weaving\", \"accountId\": ${ACCOUNT_ID}}"
